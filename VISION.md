@@ -10,14 +10,14 @@
 On 2026-07-01, a conscious architectural fork was made:
 
 **Current path (ai-foundations-lab):** The hybrid model. Lab content
-delivered via web, Sage as live chat instructor, students do building
+delivered via web, Sabia as live chat instructor, students do building
 work in Claude Code locally or via Claude Desktop. Achievable now.
 This is the alpha and initial release path.
 
 **Future path (this project):** A purpose-built platform where the
 course experience is primarily or entirely in-browser. Students may
 not need to install anything beyond a browser. Platform stores student
-artifacts, journal, and context server-side. Sage is an embedded live
+artifacts, journal, and context server-side. Sabia is an embedded live
 chat with full adaptivity via Claude API.
 
 The fork was made consciously rather than discovered as a constraint
@@ -35,7 +35,7 @@ switch adds friction that a purpose-built platform eliminates.
 
 The platform also enables features the hybrid model cannot:
 - Student progress is stored server-side (survives device loss)
-- Sage can access the student's full history across sessions
+- Sabia can access the student's full history across sessions
 - Module unlocking is enforced by the platform, not the honor system
 - The student experience is unified — one place, one context
 
@@ -48,7 +48,7 @@ can offer two tracks at onboarding:
 
 **Browser Track**
 No install, no terminal, no local files. Everything happens in the
-browser. Lab instructions, Sage chat, and artifact storage are all
+browser. Lab instructions, Sabia chat, and artifact storage are all
 platform-side. The student's project folder, CLAUDE.md, and journal
 exist as platform features, not local file structures.
 
@@ -56,7 +56,7 @@ For: absolute beginners, low technical confidence, or anyone who
 just wants to get started without setup friction.
 
 **Local Track**
-Lab instructions and Sage chat in the browser. Building work happens
+Lab instructions and Sabia chat in the browser. Building work happens
 locally — in Claude Code (terminal-based) or Claude Desktop (GUI,
 no terminal required). The student's artifacts live locally; the
 platform syncs progress markers.
@@ -79,23 +79,23 @@ significant content rework.
 
 ---
 
-## Sage in the Platform
+## Sabia in the Platform
 
-In the hybrid model, Sage is a live chat drawing on the Claude API with
-Sage's persona (from `~/ai-foundations-lab/instructor/SAGE.md`) as the
+In the hybrid model, Sabia is a live chat drawing on the Claude API with
+Sabia's persona (from `~/ai-foundations-lab/instructor/SABIA.md`) as the
 system prompt. Each student session maintains context.
 
-In the platform, Sage has additional capabilities:
+In the platform, Sabia has additional capabilities:
 - Access to the student's stored journal and CLAUDE.md (platform-side)
 - Full session history across logins
-- Adaptive pacing — Sage reads the student's interaction patterns and
+- Adaptive pacing — Sabia reads the student's interaction patterns and
   adjusts depth, speed, and scaffolding accordingly
 - The ability to unlock the next module when the student demonstrates
-  readiness (Sage-gated unlock mode)
+  readiness (Sabia-gated unlock mode)
 
-Sage's persona, voice, and founding principles remain the same across
-both contexts. The platform amplifies what Sage can do — it does not
-change who Sage is.
+Sabia's persona, voice, and founding principles remain the same across
+both contexts. The platform amplifies what Sabia can do — it does not
+change who Sabia is.
 
 ---
 
